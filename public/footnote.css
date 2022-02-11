@@ -1,0 +1,63 @@
+.entry-content .footnote {
+  font-size: 0.8rem;
+  padding: 1rem;
+  display: none;
+}
+.entry-content .footnote p {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+.entry-content .footnote p + p {
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 1100px) {
+  .entry-content .footnote {
+    margin-top: -2.4rem;
+    right: -15rem;
+    position: absolute;
+    width: 220px;
+    display: block;
+    border: none;
+  }
+}
+.entry-content .footnote + .footnote {
+  margin-top: 1rem;
+}
+.entry-content .footnote .footnote-marker {
+  display: block;
+  background-color: transparent;
+  font-size: inherit;
+  padding: 0;
+  margin-bottom: 0.5em;
+}
+
+.entry-content .footnote-visible {
+  display: block;
+}
+@media only screen and (max-width: 1200px) {
+  .entry-content .footnote-visible {
+    position: static;
+    width: 100%;
+    border: 1px dashed #333;
+    clear: both;
+    margin: 1rem 0;
+  }
+}
+
+.footnote-marker {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 5px;
+}
+.footnote-marker[data-id] {
+  cursor: pointer;
+}
+.footnote-marker::before {
+  content: "[";
+}
+.footnote-marker::after {
+  content: "]";
+}
+
+/*# sourceMappingURL=footnote.css.map */

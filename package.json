@@ -1,0 +1,17 @@
+{
+	"name": "t51-footnotes",
+	"version": "0.0.1",
+	"description": "Footnotes for posts. Based on mu-plugin for Scholar's Stage",
+	"main": "src/index.js",
+	"author": "WordPress.com Special Projects Team",
+	"devDependencies": {
+		"@wordpress/scripts": "^12.6.1"
+	},
+	"scripts": {
+		"prod": "wp-scripts build",
+		"dev": "wp-scripts start"
+	},
+	"dependencies": {
+		"classnames": "^2.2.6"
+	}
+}

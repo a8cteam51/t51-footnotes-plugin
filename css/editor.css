@@ -1,0 +1,30 @@
+:root {
+	counter-reset: footnote-note footnote-mark;
+}
+
+div[data-type="t51/footnote"] {
+	padding: 1.25rem;
+	border: 1px dashed #222222;
+}
+div[data-type="t51/footnote"] p {
+	font-size: 16px;
+}
+
+div[data-type="t51/footnote"]::before {
+	counter-increment: footnote-note;
+	content: "Footnote " counter(footnote-note);
+	display: block;
+	font-size: 16px;
+}
+
+.footnote-marker mark {
+	display: none;
+}
+
+.footnote-marker:after {
+	counter-increment: footnote-mark;
+	content: '[' counter(footnote-mark) ']';
+	font-size: 0.75em;
+	font-weight: 700;
+	padding: 4px 4px 2px;
+}
